@@ -1,0 +1,20 @@
+using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
+
+public class QuitApplication : MonoBehaviour
+{
+ 
+
+    void Update()
+    {
+        Quitting();
+    }
+
+   void Quitting()
+    {
+        if (Input.GetKeyDown(KeyCode.Escape)) { Application.Quit();
+            Debug.Log("Quiting!");
+        }
+    }
+}
